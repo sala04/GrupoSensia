@@ -4,11 +4,15 @@ import Hero from '../sections/Hero.astro';
 import Footer from '../sections/Footer.astro';
 
 import Layout from '../layouts/Layout.astro';
-import "../styles/global.css";
+
 ---
 
 <Layout>
-	<Header/>
-	<Hero/>
-	<Footer/>
+	<div class="flex min-h-screen flex-col">
+		<Header/>
+		<div class="flex-1">
+			<Hero/>
+		</div>
+		<Footer/>
+	</div>
 </Layout>
